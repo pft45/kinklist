@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="ru-RU">
+    <head>
+        <title>Лист фетишей</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link type="text/css" rel="stylesheet" href="./style.css">
+        <script src="//code.jquery.com/jquery-2.1.4.min.js"></script>
+        <script src="./script.js"></script>
+        <link rel="icon" type="image/x-icon" href="data:image/x-icon;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAALEgAACxIB0t1+/AAAABx0RVh0U29mdHdhcmUAQWRvYmUgRmlyZXdvcmtzIENTNui8sowAAAAWdEVYdENyZWF0aW9uIFRpbWUAMTAvMjEvMTV5ehY1AAAAxklEQVQ4jbWTwQ2EIBBFn7KVaAlOGV6twnqsguuWMZagnbDsiYkiGuNmf0LIJMObzw9UMUbmeY48UNd1VaWqEUBEAFBVALz31jgMw6FOeqXDn/ENQC1ikG1jCQRQX1nMm/PaAKpKPfXUU2/TzxzkMMvgqewKImJBntlP6wAQEdrQ0IZmBynZz691GeIdWYiLW1ncugtxa/ls/1+I2ymlyTuAiBDCSAijQbz3xZd36uCOEvQAUFWcm3Bu2v2D/MDWkYX463f+AkocftHk4fEUAAAAAElFTkSuQmCC">
+    </head>
+    <body>
+        <div class="widthWrapper">
+            <!--<button id="Edit"></button>-->
+            <h1>Фетиши</h1>
+            <div class="legend">
+                <div>   <span data-color="#FFFFFF" class="choice notEntered"></span>   <span class="legend-text">Не знаю</span>     </div>
+                <div>   <span data-color="#FE6BB4" class="choice favorite"></span>     <span class="legend-text">Любимое</span>     </div>
+                <div>   <span data-color="#23FD22" class="choice like"></span>         <span class="legend-text">Нравится</span>    </div>
+                <div>   <span data-color="#FDFD6B" class="choice okay"></span>         <span class="legend-text">Ок</span>          </div>
+                <div>   <span data-color="#DB6C00" class="choice maybe"></span>        <span class="legend-text">Может быть</span>  </div>
+                <div>   <span data-color="#920000" class="choice no"></span>           <span class="legend-text">Нет</span>         </div>
+            </div>
+            <div id="ExportWrapper">
+                <input type="text" id="URL">
+                <button id="Export">Экспорт</button>
+                <div id="Loading">Загрузка</div>
+            </div>
+            <button id="StartBtn"></button>
+            <div id="InputList"></div>
+        </div>
+        <div id="EditOverlay" class="overlay">
+            <textarea id="Kinks">
+#Типажи
+(Основное)
+* Худые
+* Полные
+* Спортивные
+* Высокие
+* Низкие
+* Маленькая грудь
+* Большая грудь
+* Маленькие члены
+* Большие члены
+
+#Одежда
+(Своя, Партнера)
+* Секс в одежде
+* Нижнее белье
+* Чулки
+* Каблуки
+* Кожа
+* Латекс
+* Униформа / костюм
+* Кросс-дрессинг
+
+#Группы
+(Основное)
+* Вы и 1 мужчина
+* Вы и 1 женщина
+* Вы и MtF транс (с членом)
+* Вы и FtM транс (с вагиной)
+* Вы и 1 мужчина, 1 женщина
+* Вы и 2 мужчин
+* Вы и 2 женщин
+* Оргия
+
+#Основное
+(Даете, Получаете)
+* Романтика / Привязанность
+* Дрочка / фингеринг
+* Минет
+* Глубокая глотка
+* Глотание
+* На лицо
+* Кунилингус
+* Фейс-ситтинг
+* Эджинг (прерывание)
+* Дразнение / пытка
+* Секс-инструкции
+
+#Анал
+(Даете, Получаете)
+* Анальные игрушки
+* Анальный секс / страпон
+* Римминг
+* Двойное проникновение
+* Анальный фистинг
+* Игры с простатой
+* Клизма
+
+#Ограничения
+(Себя, Партнера)
+* Кляп
+* Ошейник
+* Поводок
+* Пояс верности
+* Бондаж lite
+* Бондаж
+* Обездвиживающий костюм
+
+#Игрушки
+(Себе, Партнеру)
+* Дилдо
+* Plugs
+* Вибраторы
+* Стимулятор члена
+
+#BDSM
+(Доминирующий, Подчиняющийся)
+* Дом/саб
+* Бытовое услужение
+* Рабство
+* Пет плей
+* Отец-верх / девочка-низ (DD/lg)
+* Мать-верх / мальчик-низ (MD/lb)
+* Дисциплина
+* Мольбы
+* Форсированный оргазм
+* Контроль оргазма
+* Запрет оргазма
+* Смена доминирующего
+
+#Без согласия
+(Агрессор, Цель)
+* Без согласия / изнасилование
+* Шантаж / принуждение
+* Похищение
+* Наркотики / алкоголь
+* Игра во сне
+
+#Табу
+(Основное)
+* Инцест
+* Ageplay
+* Расовая игра
+* Зоофилия
+* Некрофилия
+* Измена
+* Эксбиционизм
+* Вуаеризм (подглядывания)
+
+#Сюрреализм
+(Свой, Партнера)
+* Футанари
+* Фурри
+* Съедание живьем
+* Трансформация
+* Тентакли
+* Монстр или пришелец
+
+#Выделения
+(Основное)
+* Кровь
+* Моча
+* Вагинальные
+* Копро
+* Грудное молоко
+* Подгузники
+* Игры со спермой
+
+#Деградация
+(Исполнитель, Цель)
+* Glory hole
+* Кличка
+* Унижения
+
+#Касания и стимуляции
+(Исполнитель, Цель)
+* Истязание члена / вагины
+* Истязание анала
+* Фут-фетиш
+* Щекотка
+* Игра ощущений
+* Электростимуляция
+
+#Остальное
+(Себя, Партнера)
+* Фистинг
+* Генгбенг
+* Игры с дыханием
+* Оплодотворение
+* Беременность
+* Феминизация
+* Cuckold / Cuckquean
+
+#Боль
+(Себе, Партнеру)
+* Легкая боль/вред
+* Сильная боль/вред
+* Прищепки для сосков
+* Прищепки для одежды
+* Палкой/тростью
+* Порка
+* Шлепки
+* Избиение
+* Шлепки по члену / вагине
+* Пытка члена / вагины
+* Горячий воск
+* Царапание
+* Укусы
+* Игры с ножом
+            </textarea>
+            <button id="KinksOK">Подтвердить</button>
+        </div>
+        <div id="InputOverlay" class="overlay">
+            <div class="widthWrapper">
+                <div id="InputPrevious"></div>
+                <div id="InputCurrent">
+                    <h2 id="InputCategory"></h2>
+                    <h3 id="InputField"></h3>
+                    <button class="closePopup">&times;</button>
+                    <div id="InputValues"></div>
+                </div>
+                <div id="InputNext"></div>
+            </div>
+        </div>
+    </body>
+</html>
