@@ -27,8 +27,6 @@ var level = {};
 
 $(function(){
 
-    var imgurClientId = '9db53e5936cd02f';
-
     inputKinks = {
         $columns: [],
         createCategory: function(name, fields){
@@ -150,7 +148,6 @@ $(function(){
 
             // Make export button work
             $('#Export').on('click', inputKinks.export);
-            $('#URL').on('click', function(){ this.select(); });
 
             // On resize, redo columns
             (function(){
@@ -269,12 +266,11 @@ $(function(){
             }
         },
         export: function(){
-            var username = prompt("Please enter your name");
+            var username = prompt("Ваше имя или никнейм (можно оставить пустым)");// || 'Anon';
             if(typeof username !== 'string') return;
-            else if (username.length ) username = '(' + username + ')';
+            //else if (username.length ) username = '' + username + '';
 
             $('#Loading').fadeIn();
-            $('#URL').fadeOut();
 
             // Constants
             var numCols = 6;
@@ -395,30 +391,20 @@ $(function(){
 
             //return $(canvas).insertBefore($('#InputList'));
 
-            // Send canvas to imgur
-            $.ajax({
-                url: 'https://api.imgur.com/3/image',
-                type: 'POST',
-                headers: {
-                    // Your application gets an imgurClientId from Imgur
-                    Authorization: 'Client-ID ' + imgurClientId,
-                    Accept: 'application/json'
-                },
-                data: {
-                    // convert the image data to base64
-                    image:  canvas.toDataURL().split(',')[1],
-                    type: 'base64'
-                },
-                success: function(result) {
-                    $('#Loading').hide();
-                    var url = 'https://i.imgur.com/' + result.data.id + '.png';
-                    $('#URL').val(url).fadeIn();
-                },
-                fail: function(){
-                    $('#Loading').hide();
-                    alert('Failed to upload to imgur, could not connect');
-                }
-            });
+            // Date YYYY-MM-DD
+            var now = new Date();
+            var dateStr = now.getFullYear() + '-' +
+                String(now.getMonth() + 1).padStart(2, '0') + '-' +
+                String(now.getDate()).padStart(2, '0');
+
+            $('#Loading').hide();
+
+            // Download canvas as PNG
+            var link = document.createElement('a');
+            if (username.length) link.download = 'pft45-kinklist-' + username + '-' + dateStr + '.png';
+            else link.download = 'pft45-kinklist-' + dateStr + '.png';
+            link.href = canvas.toDataURL('image/png');
+            link.click();
         },
         encode: function(base, input){
             var hashBase = inputKinks.hashChars.length;

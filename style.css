@@ -115,21 +115,6 @@ td + td {
     width: 460px;
     height: 36px;
 }
-#URL {
-    display: none;
-    position: absolute;
-    top: 3px;
-    box-sizing: border-box;
-    width: 300px;
-    height: 30px;
-    border-radius: 4px;
-    border: solid #CCC 1px;
-    font-size: 16px;
-    padding: 10px;
-    text-align: center;
-    color: #666;
-    font-weight: bold;
-}
 #Export {
     position: absolute;
     left: 310px;
@@ -185,7 +170,7 @@ td + td {
     #ExportWrapper {
         position: absolute;
         top: -3px;
-        right: 46px;
+        right: 6px;
     }
     h1 {
         margin-bottom: 0;
@@ -199,7 +184,7 @@ td + td {
     #ExportWrapper {
         position: absolute;
         top: -3px;
-        right: 46px;
+        right: 6px;
     }
 }
 @media (max-width: 800px) and (min-width: 598px) {
@@ -212,11 +197,6 @@ td + td {
         position: relative;
         margin-top: 10px;
         margin-left: 5px;
-    }
-    #URL {
-        left: 155px;
-        width: 190px;
-        font-size: 10px;
     }
     #Export {
         left: 0px;
@@ -242,11 +222,6 @@ td + td {
         margin-top: 10px;
         margin-left: 0px;
         width: 345px;
-    }
-    #URL {
-        left: 155px;
-        width: 190px;
-        font-size: 10px;
     }
     #Export {
         left: 0px;

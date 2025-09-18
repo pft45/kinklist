@@ -5,7 +5,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link type="text/css" rel="stylesheet" href="./style.css">
-        <script src="//code.jquery.com/jquery-2.1.4.min.js"></script>
+        <script src="./jquery-2.1.4.min.js"></script>
         <script src="./script.js"></script>
         <link rel="icon" type="image/x-icon" href="data:image/x-icon;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAALEgAACxIB0t1+/AAAABx0RVh0U29mdHdhcmUAQWRvYmUgRmlyZXdvcmtzIENTNui8sowAAAAWdEVYdENyZWF0aW9uIFRpbWUAMTAvMjEvMTV5ehY1AAAAxklEQVQ4jbWTwQ2EIBBFn7KVaAlOGV6twnqsguuWMZagnbDsiYkiGuNmf0LIJMObzw9UMUbmeY48UNd1VaWqEUBEAFBVALz31jgMw6FOeqXDn/ENQC1ikG1jCQRQX1nMm/PaAKpKPfXUU2/TzxzkMMvgqewKImJBntlP6wAQEdrQ0IZmBynZz691GeIdWYiLW1ncugtxa/ls/1+I2ymlyTuAiBDCSAijQbz3xZd36uCOEvQAUFWcm3Bu2v2D/MDWkYX463f+AkocftHk4fEUAAAAAElFTkSuQmCC">
     </head>
@@ -22,17 +22,16 @@
                 <div>   <span data-color="#920000" class="choice no"></span>           <span class="legend-text">Нет</span>         </div>
             </div>
             <div id="ExportWrapper">
-                <input type="text" id="URL">
-                <button id="Export">Экспорт</button>
+                <button id="Export">Экспорт PNG</button>
                 <div id="Loading">Загрузка</div>
             </div>
-            <button id="StartBtn"></button>
+            <!--<button id="StartBtn"></button>-->
             <div id="InputList"></div>
         </div>
         <div id="EditOverlay" class="overlay">
             <textarea id="Kinks">
 #Типажи
-(Основное)
+(Партнера)
 * Худые
 * Полные
 * Спортивные
@@ -66,7 +65,7 @@
 * Оргия
 
 #Основное
-(Даете, Получаете)
+(Делаете/Даете, Получаете)
 * Романтика / Привязанность
 * Дрочка / фингеринг
 * Минет
@@ -80,7 +79,7 @@
 * Секс-инструкции (JOI)
 
 #Анал
-(Даете, Получаете)
+(Делаете/Даете, Получаете)
 * Анальные игрушки
 * Анальный секс / страпон
 * Римминг
@@ -107,7 +106,7 @@
 * Стимулятор члена
 
 #BDSM
-(Доминирующий, Подчиняющийся)
+(Как Доминирующий, Как Подчиняющийся)
 * Дом/саб
 * Бытовое услужение
 * Рабство
@@ -122,7 +121,7 @@
 * Смена доминирующего
 
 #Без согласия
-(Агрессор, Цель)
+(Исполнитель, Цель)
 * Без согласия / изнасилование
 * Шантаж / принуждение
 * Похищение
@@ -141,7 +140,7 @@
 * Вуаеризм (подглядывания)
 
 #Сюрреализм
-(Свой, Партнера)
+(Вы/Вас, Партнер/а)
 * Футанари
 * Фурри
 * Съедание живьем
@@ -204,6 +203,7 @@
             </textarea>
             <button id="KinksOK">Подтвердить</button>
         </div>
+<!--
         <div id="InputOverlay" class="overlay">
             <div class="widthWrapper">
                 <div id="InputPrevious"></div>
@@ -216,5 +216,6 @@
                 <div id="InputNext"></div>
             </div>
         </div>
+-->
     </body>
 </html>
