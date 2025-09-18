@@ -207,7 +207,7 @@ td + td {
 }
 @media (max-width: 597px) {
     body {
-        font-size: 10px;
+        font-size: 13px;
     }
     table {
         min-width: 345px;
